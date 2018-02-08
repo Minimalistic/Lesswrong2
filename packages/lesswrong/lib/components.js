@@ -65,6 +65,10 @@ import '../components/posts/PostsEditForm.jsx';
 import '../components/posts/PostsListHeader.jsx';
 import '../components/posts/FeaturedPostsPage.jsx';
 
+import '../components/localGroups/CommunityHome.jsx';
+import '../components/localGroups/CommunityMap.jsx';
+import '../components/localGroups/LocalGroupMarker.jsx';
+
 import '../components/comments/CommentsItem/CommentsItem.jsx';
 import '../components/comments/CommentsItem/BanUserFromPostMenuItem.jsx';
 
@@ -132,3 +136,4 @@ import '../components/form-components/SequencesListEditor.jsx';
 import '../components/form-components/SequencesListEditorItem.jsx';
 import '../components/form-components/SubmitButton.jsx';
 import '../components/form-components/FormSubmit.jsx';
+import '../components/form-components/LocationFormComponent.jsx';
