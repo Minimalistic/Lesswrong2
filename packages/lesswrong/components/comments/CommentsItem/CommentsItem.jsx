@@ -204,8 +204,9 @@ class CommentsItem extends PureComponent {
             { this.renderReportMenuItem() }
             { this.renderStatsMenuItem() }
             { this.renderDeleteMenuItem() }
-            { this.props.comment && Users.canModeratePost(this.props.currentUser, this.props.post) &&
+            { Users.canModeratePost(this.props.currentUser, this.props.post) &&
               <MenuItem
+                className="comment-menu-item-ban-user-submenu"
                 primaryText="Ban User"
                 rightIcon={<ArrowDropRight />}
                 menuItems={[

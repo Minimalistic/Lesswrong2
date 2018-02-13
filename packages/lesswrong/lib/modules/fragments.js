@@ -73,6 +73,9 @@ extendFragment('UsersCurrent', `
   currentFrontpageFilter
   lastNotificationsCheck
   subscribedItems
+  groups
+  bannedUserIds
+  moderationStyle
 `);
 
 registerFragment(`
@@ -155,6 +158,7 @@ registerFragment(`
     canonicalBookId
     bannedUserIds
     user {
+      groups
       moderationStyle
       bannedUserIds
     }
@@ -380,6 +384,7 @@ registerFragment(`
     commentCount
     sequenceCount
     sequenceDraftCount
+    moderationStyle
     bannedUserIds
   }
 `);

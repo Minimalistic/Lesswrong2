@@ -482,8 +482,8 @@ Posts.addField([
     fieldSchema: {
       type: Array,
       viewableBy: ['members'],
-      insertableBy: (currentUser, document) => Users.canModeratePost(currentUser, document),
-      editableBy: (currentUser, document) => Users.canModeratePost(currentUser, document),
+      insertableBy: (currentUser, document) => Users.canModeratePost(currentUser, document, Users.findOne(document.userId)),
+      editableBy: (currentUser, document) => Users.canModeratePost(currentUser, document, Users.findOne(document.userId)),
       optional: true,
     }
   },
